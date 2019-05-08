@@ -1,6 +1,6 @@
 # Solver for discrete environments from OpenAI Gym
 
-[OpenAI gym](link)
+[OpenAI gym](https://gym.openai.com/)
 
 ## How to install and run
 
@@ -53,9 +53,22 @@ $ python main.py --run_all='True' --plot="True"
 Additional options and their defaults are:
 
 ```
-* --episodes', default = 10000
-* --alpha', default = 0.1
-* --gamma', default = 1.0
-* --plot', default = 'False'
-* --smoothing_window', default = 100
+--episodes', default = 10000
+--alpha', default = 0.1
+--gamma', default = 1.0
+--plot', default = 'False'
+--smoothing_window', default = 100
 ```
+
+## Results
+
+### Taxi-v2
+
+Obtained best avg reward = 9.75 in approx 62k episodes with:
+```
+$ python main.py --learning_algo='sarsa' --plot="True" --episodes=100000 --smoothing_window=100 --alpha=0.01
+```
+
+Here is the plot when --run_all="True":
+
+![Runs for OpenAI-gym-Taxi-v2 with different learning algorithms](https://github.com/thenickben/OpenAI-Discrete/blob/master/docs/run_all.png)
