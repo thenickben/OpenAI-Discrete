@@ -22,7 +22,7 @@ parser.add_argument('--episodes', default = 10000, help='Provide a number of epi
 parser.add_argument('--alpha', default = 0.1, help='Provide a learning rate')
 parser.add_argument('--gamma', default = 1.0, help='Provide a discounting factor')
 parser.add_argument('--plot', default = 'False', help='Provide a boolean for plotting results')
-parser.add_argument('--smoothing_window', default = 10, help='Provide a plotting smoothing window')
+parser.add_argument('--smoothing_window', default = 100, help='Provide a plotting smoothing window')
 parser.add_argument('--run_all', default = 'False', help='Provide a boolean for run all algorithms and comparing results')
 my_namespace = parser.parse_args()
 
